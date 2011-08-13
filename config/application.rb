@@ -39,5 +39,8 @@ module TalkplusRails
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    
   end
 end
+
+SITE_NAME = "Talk plus"
