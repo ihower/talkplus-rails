@@ -1,5 +1,9 @@
 ;( function( window, $ ){
-
+  
+  document.write( '<link type="text/css" rel="stylesheet" media="screen" href="http://www.talkpl.us/css/main.css">' );
+  
+  
+  
 //--- config -------------------------------------------------------------------------------------------
   
   var HOST, SOCKET, NAME, CHANNEL, CHANNELNAME;

@@ -34,16 +34,13 @@ GEM
     arel (2.1.4)
     bcrypt-ruby (2.1.4)
     builder (3.0.0)
-<<<<<<< HEAD
-    chunky_png (1.2.1)
-=======
     capistrano (2.8.0)
       highline
       net-scp (>= 1.0.0)
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
->>>>>>> e4a18294d75e16a0d39500df638e0a0c4800b0f8
+    chunky_png (1.2.1)
     coffee-rails (3.1.0.rc.5)
       actionpack (~> 3.1.0.rc1)
       coffee-script (>= 2.2.0)
@@ -61,15 +58,12 @@ GEM
     erubis (2.7.0)
     execjs (1.2.4)
       multi_json (~> 1.0)
-<<<<<<< HEAD
-    fssm (0.2.7)
-=======
     faraday (0.6.1)
       addressable (~> 2.2.4)
       multipart-post (~> 1.1.0)
       rack (< 2, >= 1.1.0)
+    fssm (0.2.7)
     highline (1.6.2)
->>>>>>> e4a18294d75e16a0d39500df638e0a0c4800b0f8
     hike (1.2.0)
     i18n (0.6.0)
     jquery-rails (1.0.13)
