@@ -1,22 +1,26 @@
-<center>
-
 <%= form_tag :controller => 'welcome', :action => 'call_create_api' do %>
+<h3>Create your own room:</h3>
+<blockquote>
+
     <table>
         <tr>
-            <td>Channel Name:</td>
+            <td>Chat Room Name:</td>
             <td><%= text_field_tag 'channel_name' %></td>
-            <td>Name of your channel</td>
         </tr>
+    </table>
+</blockquote>
+
+<h3>Room Setting:</h3>
+<blockquote>
+    <table>
         <tr>
             <td>URL:</td>
             <td><%= text_field_tag 'website_url' %></td>
-            <td>URL of your website</td>
         </tr>
         <tr>
             <td>Moderated:</td>
             <td><%= radio_button 'moderate', 'true_false', 'yes' %>Yes
                 <%= radio_button 'moderate', 'true_false', 'no', :checked => 'checked' %>No</td>
-            <td>Whether attendees are allowed to talk by default</td>
         </tr>
         <tr>
             <td>User limit:</td>
@@ -29,7 +33,7 @@
             </td>
         </tr>
     </table>
-
+</blockquote>
 <% end %>
 
-</center>
+
