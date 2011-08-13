@@ -1,17 +1,45 @@
+<div id='body_frame'>
+
 <%= form_tag :controller => 'welcome', :action => 'call_create_api' do %>
 <h3>Create your own room:</h3>
-<blockquote>
 
-    <table>
-        <tr>
-            <td>Chat Room Name:</td>
-            <td><%= text_field_tag 'channel_name' %></td>
-        </tr>
-    </table>
+<blockquote>
+<div id='input_frame'>
+    <div id='input_name'>
+        Chat Room Name:
+    </div>
+    <div id='input_field'>
+        <%= text_field_tag 'channel_name' %>
+    </div>
+</div>
 </blockquote>
 
 <h3>Room Setting:</h3>
 <blockquote>
+<div id='input_frame'>
+    <div id='input_name'>
+        URL:
+    </div>
+    <div id='input_field'>
+        <%= text_field_tag 'website_url' %>
+    </div>
+</div>
+
+<div id='input_frame'>
+    <div id='input_name'>
+    </div>
+    <div id='input_field'>
+    </div>
+</div>
+
+<div id='input_frame'>
+    <div id='input_name'>
+    </div>
+    <div id='input_field'>
+    </div>
+</div>
+
+
     <table>
         <tr>
             <td>URL:</td>
@@ -36,4 +64,4 @@
 </blockquote>
 <% end %>
 
-
+</div>

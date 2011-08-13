@@ -1,6 +1,15 @@
-<%= user_photo(@user.uid) %><br>
-<%= user_large_photo(@user.uid) %>
-<%= @user.name %><br>
+<div id='user_profile'>
+    <div class='profile_photo'>
+        <%= user_large_photo(@user.uid) %>    
+    </div>
+    <div id='profile_name'>
+        <%= @user.name %>
+    </div>
+</div>
+
+
+
+
 
 <table>
     <tr>

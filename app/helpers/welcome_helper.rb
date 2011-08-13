@@ -3,7 +3,7 @@ module WelcomeHelper
         return raw("<img src='http://graph.facebook.com/#{uid}/picture' />")
     end
     def user_large_photo(uid)
-        return raw("<img src = 'http://graph.facebook.com/#{uid}/picture?type=large' width='148'>")
+        return raw("<img src = 'http://graph.facebook.com/#{uid}/picture?type=large' width='100'>")
     end
 end
 
