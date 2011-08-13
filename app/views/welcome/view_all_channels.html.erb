@@ -1,0 +1,14 @@
+<table>
+    <tr>
+        <td>Chat Room</td>
+        <td>Users</td>
+    </tr>
+    <% @sorted_channels.each do |s| %>
+        <tr>
+            <td><%= @channels[s[0].to_i].name %></td>
+            <td><%= s[1] %></td>
+        </tr>
+    <% end %>
+</table>
+
+
