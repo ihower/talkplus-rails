@@ -7,8 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<div id='main_frame'>
+<center>
+    <%= image_tag("LOGO.png", :width => '250')%><br>
+</center>
+    <%= yield %>
+</div>
 </body>
 </html>
