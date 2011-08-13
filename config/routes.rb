@@ -1,4 +1,7 @@
 TalkplusRails::Application.routes.draw do
+  
+  get '/test' => "welcome#test"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

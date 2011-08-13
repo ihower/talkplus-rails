@@ -1,0 +1,74 @@
+/* line 3, ../../app/assets/sass/util.sass */
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 7, ../../app/assets/sass/util.sass */
+.align-c {
+  text-align: center;
+}
+
+/* line 10, ../../app/assets/sass/util.sass */
+.align-r {
+  text-align: right;
+}
+
+/* line 13, ../../app/assets/sass/util.sass */
+.float-l {
+  float: left;
+  display: inline;
+}
+
+/* line 16, ../../app/assets/sass/util.sass */
+.float-r {
+  float: right;
+  display: inline;
+}
+
+/* line 20, ../../app/assets/sass/util.sass */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 27, ../../app/assets/sass/util.sass */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 31, ../../app/assets/sass/util.sass */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 34, ../../app/assets/sass/util.sass */
+.clearfix {
+  display: block;
+}
+
+/* line 37, ../../app/assets/sass/util.sass */
+.hidden {
+  display: none;
+}
+
+/* line 40, ../../app/assets/sass/util.sass */
+.btn {
+  background: #cccccc;
+  font-size: 10px;
+  padding: 0 5px 1px;
+  color: #111111;
+  text-shadow: 0 1px 0 white;
+  cursor: pointer;
+  border: 1px solid #666666;
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+}
