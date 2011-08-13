@@ -1,0 +1,35 @@
+<center>
+
+<%= form_tag :controller => 'welcome', :action => 'call_create_api' do %>
+    <table>
+        <tr>
+            <td>Channel Name:</td>
+            <td><%= text_field_tag 'channel_name' %></td>
+            <td>Name of your channel</td>
+        </tr>
+        <tr>
+            <td>URL:</td>
+            <td><%= text_field_tag 'website_url' %></td>
+            <td>URL of your website</td>
+        </tr>
+        <tr>
+            <td>Moderated:</td>
+            <td><%= radio_button 'moderate', 'true_false', 'yes' %>Yes
+                <%= radio_button 'moderate', 'true_false', 'no', :checked => 'checked' %>No</td>
+            <td>Whether attendees are allowed to talk by default</td>
+        </tr>
+        <tr>
+            <td>User limit:</td>
+            <td><%= select "limit", "count", ['100', '1000', '10000'] %></td>
+        </tr>
+        
+        <tr>
+            <td>
+                <%= submit_tag 'create' %>
+            </td>
+        </tr>
+    </table>
+
+<% end %>
+
+</center>
