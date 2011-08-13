@@ -25,7 +25,7 @@ class ChannelsController < ApplicationController
   end
   
   def show
-    @channel = Channel.find( params[:id] )
+    @channel = Channel.find_by_uid( params[:id] )
     
     respond_to do |format|
       format.json { render :json => @channel.to_json }

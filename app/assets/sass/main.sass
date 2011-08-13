@@ -1,0 +1,76 @@
+@import "lib"
+@import "compass/reset"
+@import "util"
+
+$font-base: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif
+
+#talk-plus-wrap
+  font-size: 12px
+  font-family: $font-base
+  line-height: 1em
+  position: absolute
+  z-index: 1000
+  width: 360px
+  bottom: 0
+  right: 30px
+  color: #222
+  @include box-round-each( 5px, 5px, 0, 0 )
+  @include box-shadow( 3px, 3px, 5px, 5px )
+  
+  h1, h2, h3, h4, h5, h6
+    font-size: 12px
+  
+  a
+    color: #222
+  
+#talk-plus-share-input, #talk-plus-name-input, #talk-plus-send-input
+  background: #eee
+  border: 1px solid #777
+  padding: 2px 5px
+  @include box-round
+  
+#talk-plus-share-input
+  width: 223px
+  
+#talk-plus-name-input
+  width: 230px
+    
+#talk-plus-header
+  text-shadow: 0 1px 0 white
+  padding: 4px 8px 3px 8px
+  border-bottom: 1px solid #666
+  @include box-round-each( 5px, 5px, 0, 0 )
+  @include box-gradient( #eee, #888 )
+  
+#talk-plus-chatroom-name
+  height: 20px
+  line-height: 16px
+  
+  h3
+    @include float-l
+  
+  a 
+    margin: 0 0 0 10px
+    @include float-r
+    
+#talk-plus-share
+  h3
+    padding: 4px 5px 0 0
+    @include float-l
+    
+  a
+    margin: 0 0 0 5px
+    
+#talk-plus-content
+  width: 100%
+  background: white
+  
+#talk-plus-msgs
+  height: 200px
+  overflow: auto
+
+#talk-plus-footer
+  border-top: 1px solid #777
+  text-shadow: 0 1px 0 white
+  padding: 4px 8px 3px 8px
+  @include box-gradient( #eee, #888 )
