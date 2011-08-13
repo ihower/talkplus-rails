@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TalkplusRails</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+    <%= render_page_title(@page_title) %>
+    <%= stylesheet_link_tag    "application" %>
+    <link type="text/css" rel="stylesheet" media="screen" href="/css/main.css">
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
 </head>
 <body>
 <div id='main_frame'>
@@ -12,6 +13,11 @@
     <%= image_tag("LOGO.png", :width => '250')%><br>
 </center>
     <%= yield %>
+
 </div>
-</body>
+<script src='http://jquery-json.googlecode.com/files/jquery.json-2.2.min.js'></script>
+<script src='http://datejs.googlecode.com/svn/trunk/build/date.js'></script>
+<script src='/js/main.js'></script>
+
+  </body>
 </html>

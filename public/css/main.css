@@ -1,0 +1,265 @@
+/* line 17, ../../../../../Users/ben/.rvm/gems/ruby-1.9.2-p290@swt/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../Users/ben/.rvm/gems/ruby-1.9.2-p290@swt/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../Users/ben/.rvm/gems/ruby-1.9.2-p290@swt/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../Users/ben/.rvm/gems/ruby-1.9.2-p290@swt/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../Users/ben/.rvm/gems/ruby-1.9.2-p290@swt/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../Users/ben/.rvm/gems/ruby-1.9.2-p290@swt/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../Users/ben/.rvm/gems/ruby-1.9.2-p290@swt/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../Users/ben/.rvm/gems/ruby-1.9.2-p290@swt/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../../Users/ben/.rvm/gems/ruby-1.9.2-p290@swt/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../../app/assets/sass/util.sass */
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 7, ../../app/assets/sass/util.sass */
+.align-c {
+  text-align: center;
+}
+
+/* line 10, ../../app/assets/sass/util.sass */
+.align-r {
+  text-align: right;
+}
+
+/* line 13, ../../app/assets/sass/util.sass */
+.float-l {
+  float: left;
+  display: inline;
+}
+
+/* line 16, ../../app/assets/sass/util.sass */
+.float-r {
+  float: right;
+  display: inline;
+}
+
+/* line 20, ../../app/assets/sass/util.sass */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 27, ../../app/assets/sass/util.sass */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 31, ../../app/assets/sass/util.sass */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 34, ../../app/assets/sass/util.sass */
+.clearfix {
+  display: block;
+}
+
+/* line 37, ../../app/assets/sass/util.sass */
+.hidden {
+  display: none;
+}
+
+/* line 40, ../../app/assets/sass/util.sass */
+.btn {
+  background: #cccccc;
+  font-size: 10px;
+  padding: 0 5px 1px;
+  color: #111111;
+  text-shadow: 0 1px 0 white;
+  cursor: pointer;
+  border: 1px solid #666666;
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 7, ../../app/assets/sass/main.sass */
+#talk-plus-wrap {
+  font-size: 12px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  line-height: 1em;
+  position: absolute;
+  z-index: 1000;
+  width: 360px;
+  bottom: 0;
+  right: 30px;
+  color: #222222;
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  -khtml-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  -webkit-box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.6);
+}
+/* line 20, ../../app/assets/sass/main.sass */
+#talk-plus-wrap h1, #talk-plus-wrap h2, #talk-plus-wrap h3, #talk-plus-wrap h4, #talk-plus-wrap h5, #talk-plus-wrap h6 {
+  font-size: 12px;
+}
+/* line 23, ../../app/assets/sass/main.sass */
+#talk-plus-wrap a {
+  color: #222222;
+}
+
+/* line 26, ../../app/assets/sass/main.sass */
+#talk-plus-share-input, #talk-plus-name-input, #talk-plus-send-input {
+  background: #eeeeee;
+  border: 1px solid #777777;
+  padding: 2px 5px;
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 32, ../../app/assets/sass/main.sass */
+#talk-plus-share-input {
+  width: 223px;
+}
+
+/* line 35, ../../app/assets/sass/main.sass */
+#talk-plus-name-input {
+  width: 230px;
+}
+
+/* line 38, ../../app/assets/sass/main.sass */
+#talk-plus-header {
+  text-shadow: 0 1px 0 white;
+  padding: 4px 8px 3px 8px;
+  border-bottom: 1px solid #666666;
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  -khtml-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  background-color: #eeeeee;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), color-stop(100%, #888888));
+  background: -moz-linear-gradient(top, #eeeeee, #888888 100%);
+  background: linear-gradient(top, #eeeeee, #888888 100%);
+  -pie-background: linear-gradient(#eeeeee, #888888);
+}
+
+/* line 45, ../../app/assets/sass/main.sass */
+#talk-plus-chatroom-name {
+  height: 20px;
+  line-height: 16px;
+}
+/* line 49, ../../app/assets/sass/main.sass */
+#talk-plus-chatroom-name h3 {
+  float: left;
+  display: inline;
+}
+/* line 52, ../../app/assets/sass/main.sass */
+#talk-plus-chatroom-name a {
+  margin: 0 0 0 10px;
+  float: right;
+  display: inline;
+}
+
+/* line 57, ../../app/assets/sass/main.sass */
+#talk-plus-share h3 {
+  padding: 4px 5px 0 0;
+  float: left;
+  display: inline;
+}
+/* line 61, ../../app/assets/sass/main.sass */
+#talk-plus-share a {
+  margin: 0 0 0 5px;
+}
+
+/* line 64, ../../app/assets/sass/main.sass */
+#talk-plus-content {
+  width: 100%;
+  background: white;
+}
+
+/* line 68, ../../app/assets/sass/main.sass */
+#talk-plus-msgs {
+  height: 200px;
+  overflow: auto;
+}
+
+/* line 72, ../../app/assets/sass/main.sass */
+#talk-plus-footer {
+  border-top: 1px solid #777777;
+  text-shadow: 0 1px 0 white;
+  padding: 4px 8px 3px 8px;
+  background-color: #eeeeee;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), color-stop(100%, #888888));
+  background: -moz-linear-gradient(top, #eeeeee, #888888 100%);
+  background: linear-gradient(top, #eeeeee, #888888 100%);
+  -pie-background: linear-gradient(#eeeeee, #888888);
+}

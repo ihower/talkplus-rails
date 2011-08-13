@@ -1,11 +1,14 @@
 TalkplusRails::Application.routes.draw do
   
+  get '/test' => "welcome#test"
+
   resources :channels do
     collection do
        get 'popular'
        get 'recent'
     end 
   end
+
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

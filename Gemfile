@@ -12,6 +12,8 @@ gem 'json'
 # gem 'sqlite3'
 gem 'mysql2'
 
+gem 'compass'
+
 gem 'yajl-ruby', :require => 'yajl'
 gem 'nokogiri'
 gem 'therubyracer'
