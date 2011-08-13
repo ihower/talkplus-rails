@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110813031651) do
+ActiveRecord::Schema.define(:version => 20110813132744) do
 
   create_table "authorizations", :force => true do |t|
     t.string   "provider"
@@ -38,10 +38,12 @@ ActiveRecord::Schema.define(:version => 20110813031651) do
     t.integer  "owner_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "uid"
   end
 
   add_index "channels", ["name"], :name => "index_channels_on_name"
   add_index "channels", ["owner_id"], :name => "index_channels_on_owner_id"
+  add_index "channels", ["uid"], :name => "index_channels_on_uid"
 
   create_table "messages", :force => true do |t|
     t.integer  "channel_id"
