@@ -1,0 +1,22 @@
+<%= user_photo(@user.uid) %><br>
+<%= user_large_photo(@user.uid) %>
+<%= @user.name %><br>
+
+<table>
+    <tr>
+        <td>Chat Room</td>
+        <td></td>
+        <td>Users</td>
+    </tr>
+<% for i in (0..(@channels.length-1)) %>
+    <tr>
+        <td><%= @channels[i].name %></td>
+        <td><%= link_to image_tag('delete_channel.png', :border=>0, :width => '20'), :action => 'delete_channel', :channel_id => @channels[i].id %></td>
+        <td><%= @count[i] %></td>
+    </tr>
+
+<% end %>
+</table>
+
+<%= link_to image_tag("create_channel.png", :border=>0, :width => '20'), :action => 'create_channel' %>
+

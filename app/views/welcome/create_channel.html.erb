@@ -1,0 +1,39 @@
+<%= form_tag :controller => 'welcome', :action => 'call_create_api' do %>
+<h3>Create your own room:</h3>
+<blockquote>
+
+    <table>
+        <tr>
+            <td>Chat Room Name:</td>
+            <td><%= text_field_tag 'channel_name' %></td>
+        </tr>
+    </table>
+</blockquote>
+
+<h3>Room Setting:</h3>
+<blockquote>
+    <table>
+        <tr>
+            <td>URL:</td>
+            <td><%= text_field_tag 'website_url' %></td>
+        </tr>
+        <tr>
+            <td>Moderated:</td>
+            <td><%= radio_button 'moderate', 'true_false', 'yes' %>Yes
+                <%= radio_button 'moderate', 'true_false', 'no', :checked => 'checked' %>No</td>
+        </tr>
+        <tr>
+            <td>User limit:</td>
+            <td><%= select "limit", "count", ['100', '1000', '10000'] %></td>
+        </tr>
+        
+        <tr>
+            <td>
+                <%= submit_tag 'create' %>
+            </td>
+        </tr>
+    </table>
+</blockquote>
+<% end %>
+
+
