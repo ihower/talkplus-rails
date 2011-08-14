@@ -67,10 +67,17 @@ class WelcomeController < ApplicationController
             end
 
             channel_identify = @embeded_link.dup
-            channel_identify.gsub!("http://", "")
+            channel_identify = channel_identify.gsub("https://", "").gsub("http://", "").gsub(/\?.*/ ,"").gsub(/\/$/,"")
             
-            @channel_id = Digest::MD5.hexdigest( channel_identify.gsub(/\?.*/ ,"").gsub(/\/$/,"") )[0,6]
-            @channel_name = channel_identify
+            channel = Channel.find_by_uid( channel_identify )
+            
+            unless channel            
+              channel = Channel.new( :name => channel_identify, :uid => channel_identify )
+              channel.save
+            end
+              
+            @channel_id = channel.id
+            @channel_name = channel.name
             
             render :layout => "outside"
         else
