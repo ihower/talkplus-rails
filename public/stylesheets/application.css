@@ -198,7 +198,6 @@ body {
   font-size:20px;
   text-align: left;
   margin:0px 0px 10px 150px;
-
 }
 
 #main #create-channel-frame #image_container{
@@ -260,3 +259,75 @@ body {
   padding-left:50px;
   background: url("/stylesheets/images/create_channel.png") no-repeat;
 }
+
+#main #explain_what{
+  margin: 10px 50px 10px 50px;
+}
+
+#main #what_image{
+  width: 200px;
+  height: 200px;
+  background: url("/stylesheets/images/explain_what.png") no-repeat;
+  float: left;
+}
+
+#main #what_description{
+  float: left;
+  margin: 10px 0 0 30px;
+}
+
+#main #what_description h2{
+  background: none;
+  padding: 0 0 0 0;
+  border: 0 0 0 0;
+  margin: 30px 0 0 0;
+  text-indent: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#main #what_description h3{
+  margin: 0 0 0 0;
+  padding: 0;
+  border: 0;
+  font-size: 15px;
+}
+
+#main #explain_how{
+}
+
+#tutorial_blocks{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+#tutoral_title{
+  margin: 10px 0 10px 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#tutorial_block{
+  width: 180px;
+  margin: 0 30px 0 30px;
+  float: left;
+}
+
+#tutorial_block h2{
+  background: none;
+  padding: 0 0 0 0;
+  border: 0 0 0 0;
+  margin: 0 0 0 0;
+  text-indent: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#tutorial_block h3{
+  margin: 0 0 0 0;
+  padding: 0;
+  border: 0;
+  font-size: 15px;
+}
+
