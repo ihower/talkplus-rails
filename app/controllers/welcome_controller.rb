@@ -1,3 +1,4 @@
+require 'digest/md5'
 class WelcomeController < ApplicationController
     def index
     end
@@ -64,8 +65,13 @@ class WelcomeController < ApplicationController
             else
                 @embeded_link = "http://#{@outside_link}"
             end
+
+            channel_identify = @embeded_link.dup
+            channel_identify.gsub!("http://", "")
             
-            #@embeded_link = "http://#{outside_link.split("//")[1]}"
+            @channel_id = Digest::MD5.hexdigest( channel_identify.gsub(/\?.*/ ,"").gsub(/\/$/,"") )[0,6]
+            @channel_name = channel_identify
+            
             render :layout => "outside"
         else
             redirect_to :action => 'index'

@@ -1,7 +1,14 @@
 class ChannelsController < ApplicationController
   
   def js
-    @channel = Channel.find( params[:id] || 1 )
+    if params[:channel_name] && params[:channel_id]
+      @channel_id = params[:channel_id]
+      @channel_name = params[:channel_name]
+    else
+      channel = Channel.find( params[:id] || 1 )
+      @channel_id = channel.id
+      @channel_name = channel.name
+    end
     render :layout => false
   end
   
