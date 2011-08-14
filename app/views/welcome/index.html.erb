@@ -14,16 +14,12 @@
 </div>
 
 <div id="tutoral">
-    <div class="images">
-        <%= image_tag("tutoral.png") %>
-        <%= image_tag("tutoral.png") %>
-        <%= image_tag("tutoral.png") %>
-    </div>
+    <%= image_tag("3_steps.png") %>
     <div class="explain">
-        <span>create</span>
-        <span>share</span>
-        <span>talk</span>
-        <%= link_to image_tag("learn_more.png"), :action => 'learn_more' %>
+        <span class="setp1">create</span>
+        <span class="setp2">share</span>
+        <span class="setp3">talk</span>
+        <%= link_to "More", :action => 'learn_more', :class => "learn_more" %>
     </div>
 </div>
 
