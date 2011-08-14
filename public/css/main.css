@@ -17,6 +17,9 @@
   -khtml-border-radius: 5px 5px 0 0;
   -ms-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
+  -webkit-box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.6);
 }
 /* line 20, ../../app/assets/sass/main.sass */
 #talk-plus-wrap span, #talk-plus-wrap applet, #talk-plus-wrap object, #talk-plus-wrap iframe,
