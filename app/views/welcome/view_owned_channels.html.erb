@@ -1,31 +1,30 @@
-<div id='user_profile'>
-    <div class='profile_photo'>
+<div id='user-profile'>
+    <div class='profile-photo'>
         <%= user_large_photo(@user.uid) %>    
-    </div>
-    <div id='profile_name'>
         <%= @user.name %>
     </div>
 </div>
 
-
-
-
-
-<table>
+<table id="manage-table">
+    <caption>Manage your chatroom:</caption>
     <tr>
-        <td>Chat Room</td>
-        <td></td>
-        <td>Users</td>
+        <th>Chat Room</th>
+        <th></th>
+        <th>Users</th>
     </tr>
 <% for i in (0..(@channels.length-1)) %>
     <tr>
         <td><%= @channels[i].name %></td>
-        <td><%= image_tag 'setting.png', :width => '20' %><%= link_to image_tag('delete_channel.png', :border=>0, :width => '20'), :action => 'delete_channel', :channel_id => @channels[i].id %></td>
+        <td>
+        <%= link_to image_tag('delete_channel.png', :width => '40', :alt => "刪除"), :action => 'delete_channel', :channel_id => @channels[i].id %></td>
         <td><%= @count[i] %></td>
     </tr>
-
 <% end %>
 </table>
 
-<%= link_to image_tag("create_channel.png", :border=>0, :width => '20'), :action => 'create_channel' %>
+<div id="mamage-buttons">
+    <%= link_to "add new chatroom", :action => 'create_channel' %>
+</div>
+
+
 

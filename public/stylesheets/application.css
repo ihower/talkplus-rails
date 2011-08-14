@@ -4,6 +4,8 @@ body {
   color:#ffffff;
 }
 
+#container { 
+}
 
 #main {
   margin:0px auto;
@@ -11,7 +13,6 @@ body {
   background:#b20000;
   border:2px solid #ffffff;
   border-top:0;
-  border-bottom:0;
   padding-top:20px;
 }
 
@@ -204,3 +205,58 @@ body {
   margin:0px 50px 50px 500px;
 }
 
+#main #user-profile {
+  padding:20px 40px;
+}
+
+#main #user-profile .profile-photo {
+  vertical-align:top;
+  font-size:30px;
+}
+
+#main #user-profile .profile-photo img {
+  border:3px solid #000000;
+}
+
+#main #manage-table {
+  width:820px;
+  margin-left:40px;
+}
+
+#main #manage-table caption{
+  font-size:30px;
+  margin-bottom:10px;
+}
+
+#main #manage-table th {
+  padding-left:10px;
+  font-size:25px;
+  height:50px;
+  border-bottom:3px solid #fbffff;
+  background:#994948;
+}
+
+#main #manage-table td {
+  padding-left:10px;
+  font-size:25px;
+  height:50px;
+  border-bottom:1px solid #fbffff;
+}
+
+#main #mamage-buttons {
+  margin-left:40px;
+  font-size:20px;
+  padding:20px 0 10px 0;
+}
+
+#main #mamage-buttons a {
+  display:block;
+  width:400px;
+  height:40px;
+  font-size:22px;
+  line-height:40px;
+  text-decoration:none;
+  color:#ffffff;
+  padding-left:50px;
+  background: url("/stylesheets/images/create_channel.png") no-repeat;
+}
