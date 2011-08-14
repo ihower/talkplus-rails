@@ -1,8 +1,32 @@
-<center>
-<h2>Let's Talk now!</h2>
-talk+ is a platform to talk about a hot topic with anyone.<br><br><br><br><br>
 
-<%= link_to image_tag("create_user.png", :border=>0), '/auth/facebook' %>
-<%= link_to image_tag("talk_now.png", :border=>0), :action => 'view_all_channels' %>
-<%= link_to image_tag("learn_more.png", :border=>0), :action => 'learn_more' %>
-</center>
+<div id="description">
+    <h2>Let's Talk now!</h2>
+    <p>talk+ is a platform to talk about a hot topic with anyone.</p>
+</div>
+
+<div id="url-input">
+    <span>try talk+ on:</span>
+    <input type="text" class="input">
+    <input type="button" class="sumbit" value="GO">
+</div>
+
+<div id="tutoral">
+    <div class="images">
+        <%= image_tag("tutoral.png") %>
+        <%= image_tag("tutoral.png") %>
+        <%= image_tag("tutoral.png") %>
+    </div>
+    <div class="explain">
+        <span>create</span>
+        <span>share</span>
+        <span>talk</span>
+        <%= link_to image_tag("learn_more.png"), :action => 'learn_more' %>
+    </div>
+</div>
+
+<div id="buttons">
+    <%= link_to image_tag("create_user.png"), '/auth/facebook' %>
+    <%= link_to image_tag("talk_now.png"), :action => 'view_all_channels' %>
+</div>
+
+

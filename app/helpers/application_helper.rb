@@ -3,4 +3,8 @@ module ApplicationHelper
     title = page_title ? "#{page_title} | #{SITE_NAME}" : SITE_NAME rescue "SITE_NAME"
     content_tag("title", title)
   end
+  
+  def render_h1(page_title)
+    @page_title || "Talk Plus"
+  end
 end
