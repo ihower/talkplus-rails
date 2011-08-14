@@ -1,21 +1,15 @@
-<div id='channel-menu-tab'>
-</div>
-
-<div id='show-all-channels'>
-
-</div>
-
-<table>
+<table id="manage-table">
+    <caption>Manage your chatroom:</caption>
     <tr>
-        <td>Chat Room</td>
-        <td>Users</td>
+        <th>Chat Room</th>
+        <th></th>
+        <th>Users</th>
     </tr>
     <% @sorted_channels.each do |s| %>
-        <tr>
-            <td><%= @channels[s[0].to_i].name %></td>
-            <td><%= s[1] %></td>
-        </tr>
-    <% end %>
+    <tr>
+        <td><%= @channels[s[0].to_i].name %></td>
+        <td></td>
+        <td><%= s[1] %></td>
+    </tr>
+<% end %>
 </table>
-
-
