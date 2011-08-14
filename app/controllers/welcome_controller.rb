@@ -58,6 +58,7 @@ class WelcomeController < ApplicationController
     end
     
     def embeded_website
+      
         @outside_link = params[:outside_link]
         if @outside_link
             if @outside_link.split("://")[1]
@@ -78,7 +79,7 @@ class WelcomeController < ApplicationController
               
             @channel_id = channel.id
             @channel_name = channel.name
-            
+            @page_title = channel.name
             render :layout => "outside"
         else
             redirect_to :action => 'index'
