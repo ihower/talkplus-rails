@@ -1,3 +1,10 @@
+iframe{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #talk-plus-panel{
   width: 100%;
   height: 30px;
@@ -13,6 +20,16 @@
   float: left;
   display: inline-block;
   line-height: 30px;
+}
+
+#talk-plus-iframe-wrap{
+  top: 30px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  overflow: hidden;
 }
 
 #logo-small{
