@@ -99,3 +99,33 @@ body {
   text-align:center;
   padding:20px 0;
 }
+
+#main #create-channel-frame{
+}
+
+#main #create-channel-frame .input {
+  height:20px;
+  width:200px;
+}
+
+#main #create-channel-frame h1{
+  margin:20px 0px 10px 100px;
+  background: none;
+  width: auto;
+  height: auto;
+  text-indent: 0px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#main #create-channel-frame h2{
+  font-size:20px;
+  text-align: left;
+  margin:0px 0px 10px 150px;
+
+}
+
+#main #create-channel-frame #image_container{
+  margin:0px 50px 50px 500px;
+}
+

@@ -66,7 +66,7 @@ class WelcomeController < ApplicationController
         end
         
         #@embeded_link = "http://#{outside_link.split("//")[1]}"
-        render :layout => nil
+        render :layout => "outside"
     end
     
     def learn_more

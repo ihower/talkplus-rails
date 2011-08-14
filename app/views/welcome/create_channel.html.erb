@@ -1,60 +1,18 @@
-<div id='body_frame'>
-
 <%= form_tag :controller => 'welcome', :action => 'call_create_api' do %>
-<h3>Create your own room:</h3>
+<div id='create-channel-frame'>
+<h1>Create your own room:</h1>
+<h2>Chat Room Name: <%= text_field_tag 'channel_name', nil, :class => 'input' %><h2>
 
-<blockquote>
-<div id='input_frame'>
-    <div id='input_name'>
-        Chat Room Name:
-    </div>
-    <div id='input_field'>
-        <%= text_field_tag 'channel_name' %>
-    </div>
-</div>
-</blockquote>
-
-<h3>Room Setting:</h3>
-<blockquote>
-<div id='input_frame'>
-    <div id='input_name'>
-        URL:
-    </div>
-    <div id='input_field'>
-        <%= text_field_tag 'website_url' %>
-    </div>
+<h1>Room setting:</h1>
+<h2>URL: <%= text_field_tag 'website_url', nil, :class => 'input' %></h2>
+<h2>Moderated: <%= radio_button 'moderate', 'true_false', 'yes' %>Yes
+               <%= radio_button 'moderate', 'true_false', 'no', :checked => 'checked' %>No</h2>
+<h2>User limit:<%= select "limit", "count", ['100', '1000', '10000'] %></h2>
+<div id='image_container'>
+    <%= image_submit_tag 'create.png' %>
 </div>
 
-<div id='input_frame'>
-    <div id='input_name'>
-        URL:
-    </div>
-    <div id='input_field'>
-        <%= text_field_tag 'website_url' %>
-    </div>
 </div>
 
-<div id='input_frame'>
-    <div id='input_name'>
-        Moderated:
-    </div>
-        <%= radio_button 'moderate', 'true_false', 'yes' %>Yes
-        <%= radio_button 'moderate', 'true_false', 'no', :checked => 'checked' %>No
-    <div id='input_field'>
-    </div>
-</div>
-
-<div id='input_frame'>
-    <div id='input_name'>
-        User limit:
-    </div>
-    <div id='input_field'>
-        <%= select "limit", "count", ['100', '1000', '10000'] %>
-    </div>
-</div>
-<%= image_submit_tag 'create.png' %>
-
-</blockquote>
 <% end %>
 
-</div>
