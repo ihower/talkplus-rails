@@ -57,6 +57,10 @@ class WelcomeController < ApplicationController
     def channel
     end
     
+    def embeded_website
+        @outside_link = params[:outside_link]
+    end
+    
     def learn_more
     end
 end

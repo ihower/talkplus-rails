@@ -20,7 +20,7 @@
 <% for i in (0..(@channels.length-1)) %>
     <tr>
         <td><%= @channels[i].name %></td>
-        <td><%= link_to image_tag('delete_channel.png', :border=>0, :width => '20'), :action => 'delete_channel', :channel_id => @channels[i].id %></td>
+        <td><%= image_tag 'setting.png', :width => '20' %><%= link_to image_tag('delete_channel.png', :border=>0, :width => '20'), :action => 'delete_channel', :channel_id => @channels[i].id %></td>
         <td><%= @count[i] %></td>
     </tr>
 
