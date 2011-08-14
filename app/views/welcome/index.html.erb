@@ -13,17 +13,11 @@
     <% end %>
 </div>
 
-<div id="tutoral">
-    <%= image_tag("3_steps.png") %>
-    <div class="explain">
-        <span class="setp1">create</span>
-        <span class="setp2">share</span>
-        <span class="setp3">talk</span>
-        <%= link_to "Learn More", :action => 'learn_more', :class => "learn_more" %>
-    </div>
+<div id="description-buttons">
+    <%= link_to "Your Talks", '/auth/facebook', :class => "link-button" %>
+    <%= link_to "Top Talks", 'welcome/view_all_channels', :class => "link-button" %>
+    <%= link_to "On Android", "http://dl.dropbox.com/u/26793275/TalkPlus.apk", :class => "link-button" %>
+    <%= link_to "Learn More", 'welcome/learn_more', :class => "link-button" %>
 </div>
 
-<div id="buttons">
-    <%= link_to image_tag("my_room.png"), '/auth/facebook' %>
-    <%= link_to image_tag("talk_now.png"), :action => 'view_all_channels' %>
-</div>
+<%= image_tag("3_steps.png", :class => "steps") %>

@@ -47,9 +47,8 @@ body {
 #main #url-input {
   float:left;
   margin:10px 25px;
-  padding:20px 0 40px 0;
+  padding:10px;
   width:850px;
-  border-bottom:1px solid #ffffff;
   font-size:22px;
 }
 
@@ -98,55 +97,13 @@ body {
   background: -moz-linear-gradient(#ffffff, #cccccc);
 }
 
-#main #tutoral {
+#main #description-buttons {
   float:left;
-  margin:0 25px 10px 25px;
-  padding:20px 0 20px 0;
-  width:850px;
-  border-bottom:1px solid #ffffff;
-}
-
-#main #tutoral img{
-  margin-left:40px;
-}
-
-#main #tutoral .explain {
-  float:left;
-  width:850px;
-  margin:0 20px;
-}
-
-#main #tutoral .explain .setp1 {
-  float:left;
-  display:block;
   text-align:center;
-  margin-left:15px;
-  width:170px;
-  height:30px;
-  font-size:18px;
+  margin:0 0 10px 90px;
 }
 
-#main #tutoral .explain .setp2 {
-  float:left;
-  display:block;
-  text-align:center;
-  margin-left:65px;
-  width:170px;
-  height:30px;
-  font-size:18px;
-}
-
-#main #tutoral .explain .setp3 {
-  float:left;
-  display:block;
-  text-align:center;
-  margin-left:65px;
-  width:170px;
-  height:30px;
-  font-size:18px;
-}
-
-#main #tutoral .explain a {
+#main #description-buttons .link-button {
   float:right;
   display:block;
   margin-right:40px;
@@ -264,4 +221,8 @@ body {
   color:#ffffff;
   padding-left:50px;
   background: url("/stylesheets/images/create_channel.png") no-repeat;
+}
+
+.steps {
+  margin:15px 0 30px 45px;
 }
