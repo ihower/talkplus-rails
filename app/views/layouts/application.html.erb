@@ -3,20 +3,20 @@
   <head>
     <%= render_page_title(@page_title) %>
     <%= csrf_meta_tags %>
-    <link type="text/css" rel="stylesheet" media="screen" href="/css/application.css">
+    <%= stylesheet_link_tag "reset",
+                            "application",
+                            :cache => "all" %>
     <link type="text/css" rel="stylesheet" media="screen" href="/css/main.css">
   </head>
   <body>
-    <div id='main_frame'>
-    <center>
-        <%= image_tag("LOGO.png", :width => '250')%><br>
-    </center>
-        <%= yield %>
+    <div id="container">
+        <div id='main'>
+            <h1><%= render_h1(@page_title) %></h1>
+            <%= yield %>
+        </div>
     </div>
-
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
     <script src='http://jquery-json.googlecode.com/files/jquery.json-2.2.min.js'></script>
     <script src='http://datejs.googlecode.com/svn/trunk/build/date.js'></script>
-    <script src='/js/main.js'></script>
   </body>
 </html>

@@ -1,0 +1,101 @@
+body {
+  background:#000000;
+  font-family: Sans-serif, Verdana;
+  color:#ffffff;
+}
+
+#main {
+  margin:20px auto;
+  width:900px;
+  background:#b20000;
+  border:2px solid #ffffff;
+}
+
+#main h1 {
+  margin:20px auto;
+  width:196px;
+  height:87px;
+  text-indent:-999999px;
+  background: url(./images/logo.png);
+}
+
+#main #description {
+}
+
+#main #description h2 {
+  font-size:28px;
+  text-align:center;
+  margin:10px 0;
+}
+
+#main #description p {
+  font-size:20px;
+  text-align:center;
+}
+
+#main #url-input {
+  float:left;
+  margin:10px 25px;
+  padding:20px 0 40px 0;
+  width:850px;
+  border-bottom:1px solid #ffffff;
+  font-size:22px;
+}
+
+#main #url-input span {
+  display:block;
+  float:left;
+  margin-left:20px;
+  padding:3px 25px 0 25px;
+}
+
+#main #url-input .input {
+  height:20px;
+  width:500px;
+}
+
+#main #tutoral {
+  float:left;
+  margin:0 25px 10px 25px;
+  padding:20px 0 20px 0;
+  width:850px;
+  border-bottom:1px solid #ffffff;
+}
+
+#main #tutoral .images {
+  float:left;
+  width:850px;
+  margin:20px;
+}
+
+#main #tutoral .images img {
+  float:left;
+  width:160px;
+  height:160px;
+  background:#ffffff;
+  margin-left:50px;
+  -moz-box-shadow:2px 2px 10px #474747;
+  -webkit-box-shadow:2px 2px 10px #474747;
+  box-shadow:2px 2px 10px #474747;
+}
+
+#main #tutoral .explain {
+  float:left;
+  width:850px;
+  margin:0 20px;
+}
+
+#main #tutoral .explain span {
+  float:left;
+  display:block;
+  text-align:center;
+  margin-left:50px;
+  width:160px;
+  height:30px;
+  font-size:18px;
+}
+
+#main #buttons {
+  text-align:center;
+  padding:20px 0;
+}

@@ -12,7 +12,6 @@ class WelcomeController < ApplicationController
     end
     
     def create_channel
-    
     end
     
     def delete_channel
