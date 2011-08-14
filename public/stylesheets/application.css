@@ -243,6 +243,11 @@ body {
   border-bottom:1px solid #fbffff;
 }
 
+#main #manage-table textarea {
+  width:300px;
+  height:90px;
+}
+
 #main #mamage-buttons {
   margin-left:40px;
   font-size:20px;
