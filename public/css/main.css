@@ -116,6 +116,8 @@
 #talk-plus-add-name-btn, #talk-plus-submit-btn {
   background: #eeeeee;
   border: 1px solid #777777;
+  padding: 2px 5px;
+  margin: 0 0 0 5px;
   -webkit-background-clip: padding-box;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -125,7 +127,7 @@
   border-radius: 3px;
 }
 
-/* line 91, ../../app/assets/sass/main.sass */
+/* line 93, ../../app/assets/sass/main.sass */
 #talk-plus-header {
   text-shadow: 0 1px 0 white;
   padding: 4px 8px 3px 8px;
@@ -144,58 +146,58 @@
   -pie-background: linear-gradient(#eeeeee, #888888);
 }
 
-/* line 98, ../../app/assets/sass/main.sass */
+/* line 100, ../../app/assets/sass/main.sass */
 #talk-plus-chatroom-name {
   height: 20px;
   line-height: 16px;
 }
-/* line 102, ../../app/assets/sass/main.sass */
+/* line 104, ../../app/assets/sass/main.sass */
 #talk-plus-chatroom-name h3 {
   float: left;
   display: inline;
 }
-/* line 105, ../../app/assets/sass/main.sass */
+/* line 107, ../../app/assets/sass/main.sass */
 #talk-plus-chatroom-name a {
   margin: 0 0 0 10px;
   float: right;
   display: inline;
 }
 
-/* line 110, ../../app/assets/sass/main.sass */
+/* line 112, ../../app/assets/sass/main.sass */
 #talk-plus-share h3 {
   padding: 4px 5px 0 0;
   float: left;
   display: inline;
 }
-/* line 114, ../../app/assets/sass/main.sass */
+/* line 116, ../../app/assets/sass/main.sass */
 #talk-plus-share a {
   margin: 0 0 0 10px;
 }
 
-/* line 117, ../../app/assets/sass/main.sass */
+/* line 119, ../../app/assets/sass/main.sass */
 #talk-plus-content {
   width: 100%;
   background: white;
 }
 
-/* line 121, ../../app/assets/sass/main.sass */
+/* line 123, ../../app/assets/sass/main.sass */
 #talk-plus-msgs {
   height: 200px;
   overflow: auto;
 }
-/* line 125, ../../app/assets/sass/main.sass */
+/* line 127, ../../app/assets/sass/main.sass */
 #talk-plus-msgs li {
   padding: 3px;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 130, ../../app/assets/sass/main.sass */
+/* line 132, ../../app/assets/sass/main.sass */
 #talk-plus-msgs span.talk-plus-msg-user {
   padding: 0 5px 0 0;
   font-weight: bolder;
   display: block;
 }
-/* line 134, ../../app/assets/sass/main.sass */
+/* line 136, ../../app/assets/sass/main.sass */
 #talk-plus-msgs span.talk-plus-msg-msg {
   width: 300px;
   white-space: normal;
@@ -203,14 +205,14 @@
   float: left;
   display: inline;
 }
-/* line 139, ../../app/assets/sass/main.sass */
+/* line 141, ../../app/assets/sass/main.sass */
 #talk-plus-msgs span.talk-plus-msg-time {
   color: #aaaaaa;
   float: right;
   display: inline;
 }
 
-/* line 143, ../../app/assets/sass/main.sass */
+/* line 145, ../../app/assets/sass/main.sass */
 #talk-plus-footer {
   border-top: 1px solid #777777;
   text-shadow: 0 1px 0 white;
@@ -222,12 +224,12 @@
   -pie-background: linear-gradient(#eeeeee, #888888);
 }
 
-/* line 149, ../../app/assets/sass/main.sass */
+/* line 151, ../../app/assets/sass/main.sass */
 #talk-plus-hot-topic {
   height: 16px;
   padding: 5px 0 0;
 }
-/* line 153, ../../app/assets/sass/main.sass */
+/* line 155, ../../app/assets/sass/main.sass */
 #talk-plus-hot-topic h3 {
   padding: 0 5px 0 0;
   float: left;

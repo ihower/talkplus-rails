@@ -1,10 +1,34 @@
 #talk-plus-panel{
   width: 100%;
-  height: 15px;
-  padding: 5px 0 5px 0;
+  height: 30px;
   background-color: #b20000;
   color: white;
   font-family: Sans-serif, Verdana;
-  font-size: 15px;
 }
 
+#powered-by{
+  font-size: 15px;
+  font-weight: bold;
+  height: 30px;
+  float: left;
+  display: inline-block;
+  line-height: 30px;
+}
+
+#logo-small{
+  width: 100px;
+  height: 30px;
+
+  background-repeat: no-repeat;
+  float: left;
+}
+
+#create-own{
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 30px;
+  float: right;
+  margin: 0 20px 0 0;
+  height: 30px;
+}
