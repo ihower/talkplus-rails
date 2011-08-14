@@ -1,3 +1,4 @@
+require 'digest/md5'
 class WelcomeController < ApplicationController
     def index
     end
@@ -64,8 +65,20 @@ class WelcomeController < ApplicationController
             else
                 @embeded_link = "http://#{@outside_link}"
             end
+
+            channel_identify = @embeded_link.dup
+            channel_identify = channel_identify.gsub("https://", "").gsub("http://", "").gsub(/\?.*/ ,"").gsub(/\/$/,"")
             
-            #@embeded_link = "http://#{outside_link.split("//")[1]}"
+            channel = Channel.find_by_uid( channel_identify )
+            
+            unless channel            
+              channel = Channel.new( :name => channel_identify, :uid => channel_identify )
+              channel.save
+            end
+              
+            @channel_id = channel.id
+            @channel_name = channel.name
+            
             render :layout => "outside"
         else
             redirect_to :action => 'index'
