@@ -4,9 +4,11 @@
 </div>
 
 <div id="url-input">
-    <span>try talk+ on:</span>
-    <input type="text" class="input">
-    <input type="button" class="sumbit" value="GO">
+    <%= form_tag :controller => 'welcome', :action => 'embeded_website' do %>
+        <span>try talk+ on:</span>
+        <%= text_field_tag 'outside_link', nil, :class => "input" %>
+        <%= submit_tag 'GO', :class => "sumbit" %>
+    <% end %>
 </div>
 
 <div id="tutoral">
