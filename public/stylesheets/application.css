@@ -4,19 +4,29 @@ body {
   color:#ffffff;
 }
 
+
 #main {
-  margin:20px auto;
+  margin:0px auto;
   width:900px;
   background:#b20000;
   border:2px solid #ffffff;
+  border-top:0;
+  border-bottom:0;
+  padding-top:20px;
 }
 
 #main h1 {
-  margin:20px auto;
+  margin:0px auto;
   width:196px;
   height:87px;
   text-indent:-999999px;
   background: url(/stylesheets/images/LOGO.png);
+}
+
+#main h1 a {
+  display:block;
+  width:196px;
+  height:87px;
 }
 
 #main #description {
@@ -45,7 +55,7 @@ body {
 #main #url-input span {
   display:block;
   float:left;
-  margin-left:20px;
+  margin:7px 0 0 20px;
   padding:3px 25px 0 25px;
 }
 
@@ -64,6 +74,28 @@ body {
   font-size:15px;
   border:0;
   background:none;
+}
+
+#main #url-input .sumbit {
+  margin:7px 0 0 10px;
+  width:100px;
+  height:30px;
+  font-size:16px;
+  font-weight:bold;
+  background:none;
+  color:#ffffff;
+  text-shadow: 0 1px 0 #ffffff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border:1px solid #cccccc;
+  background: #cccccc;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#cccccc), to(#000000));
+  background: -moz-linear-gradient(#ffffff, #cccccc);
+
 }
 
 #main #tutoral {
