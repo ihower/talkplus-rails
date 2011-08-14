@@ -5,6 +5,7 @@ module ApplicationHelper
   end
   
   def render_h1(page_title)
-    @page_title || "Talk Plus"
+    title = @page_title || "Talk Plus"
+    link_to(title, root_path)
   end
 end

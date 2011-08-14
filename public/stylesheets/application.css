@@ -4,19 +4,29 @@ body {
   color:#ffffff;
 }
 
+
 #main {
-  margin:20px auto;
+  margin:0px auto;
   width:900px;
   background:#b20000;
   border:2px solid #ffffff;
+  border-top:0;
+  border-bottom:0;
+  padding-top:20px;
 }
 
 #main h1 {
-  margin:20px auto;
+  margin:0px auto;
   width:196px;
   height:87px;
   text-indent:-999999px;
   background: url(/stylesheets/images/LOGO.png);
+}
+
+#main h1 a {
+  display:block;
+  width:196px;
+  height:87px;
 }
 
 #main #description {
@@ -45,7 +55,7 @@ body {
 #main #url-input span {
   display:block;
   float:left;
-  margin-left:20px;
+  margin:7px 0 0 20px;
   padding:3px 25px 0 25px;
 }
 
@@ -66,6 +76,27 @@ body {
   background:none;
 }
 
+#main #url-input .sumbit {
+  margin:7px 0 0 10px;
+  width:100px;
+  height:30px;
+  font-size:16px;
+  font-weight:bold;
+  background:none;
+  color:#ffffff;
+  text-shadow: 0 1px 0 #ffffff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border:1px solid #cccccc;
+  background: #cccccc;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#cccccc), to(#000000));
+  background: -moz-linear-gradient(#ffffff, #cccccc);
+}
+
 #main #tutoral {
   float:left;
   margin:0 25px 10px 25px;
@@ -74,21 +105,8 @@ body {
   border-bottom:1px solid #ffffff;
 }
 
-#main #tutoral .images {
-  float:left;
-  width:850px;
-  margin:20px;
-}
-
-#main #tutoral .images img {
-  float:left;
-  width:160px;
-  height:160px;
-  background:#ffffff;
-  margin-left:50px;
-  -moz-box-shadow:2px 2px 10px #474747;
-  -webkit-box-shadow:2px 2px 10px #474747;
-  box-shadow:2px 2px 10px #474747;
+#main #tutoral img{
+  margin-left:40px;
 }
 
 #main #tutoral .explain {
@@ -97,14 +115,59 @@ body {
   margin:0 20px;
 }
 
-#main #tutoral .explain span {
+#main #tutoral .explain .setp1 {
   float:left;
   display:block;
   text-align:center;
-  margin-left:50px;
-  width:160px;
+  margin-left:15px;
+  width:170px;
   height:30px;
   font-size:18px;
+}
+
+#main #tutoral .explain .setp2 {
+  float:left;
+  display:block;
+  text-align:center;
+  margin-left:65px;
+  width:170px;
+  height:30px;
+  font-size:18px;
+}
+
+#main #tutoral .explain .setp3 {
+  float:left;
+  display:block;
+  text-align:center;
+  margin-left:65px;
+  width:170px;
+  height:30px;
+  font-size:18px;
+}
+
+#main #tutoral .explain a {
+  float:right;
+  display:block;
+  margin-right:70px;
+  width:100px;
+  height:30px;
+  line-height:30px;
+  text-align:center;
+  font-size:16px;
+  text-decoration:none;
+  background:none;
+  color:#ffffff;
+  text-shadow: 0 1px 0 #ffffff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border:1px solid #cccccc;
+  background: #cccccc;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#cccccc), to(#000000));
+  background: -moz-linear-gradient(#ffffff, #cccccc);
 }
 
 #main #buttons {

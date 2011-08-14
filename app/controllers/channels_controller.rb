@@ -1,5 +1,10 @@
 class ChannelsController < ApplicationController
   
+  def js
+    @channel = Channel.find( params[:id] || 1 )
+    render :layout => false
+  end
+  
   def recent
     @channels = Channel.order("id desc")
     
