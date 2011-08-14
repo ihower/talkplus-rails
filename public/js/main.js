@@ -25,6 +25,7 @@
       '<div id="talk-plus-header">' +
         '<div id="talk-plus-chatroom-name">' +
           '<h3>' + CHANNELNAME + '</h3>' +
+          '<a href="#" id="talk-plus-hide">Hide</a>' +
           '<a href="#">More</a>' +
         '</div>' +
         '<div id="talk-plus-share">' + 
@@ -51,8 +52,9 @@
               '<input id="talk-plus-submit-btn" type="submit" value="Send"/>' +
             '</div>' +
           '</form>' + 
-          '<div id="talk-plus-hot-top">' +
+          '<div id="talk-plus-hot-topic">' +
             '<h3>Hot Topics: </h3>' + 
+            '<a href="www.talkpl.us/welcome/embeded_website?outside_link=http://taipei.startupweekend.org/">Startup Weekend Taipei</a>' +
           '</div>' +
         '</div>' +
       '</div>';
@@ -70,8 +72,8 @@
 
     msg : function( user, msg, time ){
       return '<li>' +
-        '<span>' + user + ' </span>' +
-        '<span>' + msg +'</span>' +
+        '<span class="talk-plus-msg-user">' + user + ' </span>' +
+        '<span class="talk-plus-msg-msg">' + msg +'</span>' +
         '<span class="talk-plus-msg-time">'+ time +'</span>' +
       '</li>';
     }
@@ -80,11 +82,11 @@
 
 
 
-//--- model --------------------------------------------------------------------------------------------
-  
-  var model = {
+//--- controller ---------------------------------------------------------------------------------------
+
+  var action = {
     
-    join : function( e ){
+    _join : function( e ){
       var self, $msg_block ;
       
       e.preventDefault();
@@ -96,6 +98,7 @@
 
       $( '#talk-plus-join' ).hide();
       $( '#talk-plus-send' ).show();
+      $( '#talk-plus-send-input' ).focus();
       
       $msg_block = $( '#talk-plus-msgs' ).find( 'ul' );
       
@@ -106,8 +109,8 @@
         
         self[ obj[ 'action' ]]( 
           $msg_block, 
-          obj[ 'user' ], 
-          obj[ 'message' ], 
+          obj[ 'user' ].replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"), 
+          obj[ 'message' ].replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"), 
           ( new Date()).toString( "HH:mm:ss" )
         );
       };
@@ -119,7 +122,10 @@
         
         $input = $( '#talk-plus-send-input' );
 
-        SOCKET.send( $.toJSON({ action: 'message', message: $input.val()}));
+        SOCKET.send( $.toJSON({ 
+          action: 'message', 
+          message: $input.val()
+        }));
         $input.val( '' );
       });
 
@@ -133,33 +139,62 @@
       };
     },
     
-    message : function( $msg_block, user, msg, time ){
-      $msg_block.append( view.msg( user + ':', msg, time ));
-    },
-    
-    control : function( $msg_block, user, msg, time ){
+    _msg : function( $msg_block, user, msg, time ){
       $msg_block.append( view.msg( user, msg, time ));
-    }
-  };
-
-
-
-//--- controller ---------------------------------------------------------------------------------------
-
-  var action = {
+      $msg_block.parent().scrollTop( $msg_block.height());
+    },
     
     init : function( $body ){
       if( typeof WebSocket !== 'undefined' ){
         $body.append( view.join());
+        this.focus();
         this.join();
+        this.hide();
       }else {
         $body.append( view.error());
       }
     },
     
+    message : function( $msg_block, user, msg, time ){
+      this._msg( $msg_block, user, msg, time );
+    },
+    
+    control : function( $msg_block, user, msg, time ){
+      this._msg( $msg_block, user, msg, time );
+    },
+    
+    focus : function(){
+      $( '#talk-plus-share-input' ).
+        val( '<script>document.write("<script src="www.talkpl.us/welcome/js"></script>");</script>' ).
+        mousedown( function( e ){
+          e.preventDefault();
+          $( this ).select();
+        }).focus( function(){
+          $( this ).select();
+        });
+      $( '#talk-plus-name-input' ).focus();
+    },
+    
+    hide : function(){
+      $( '#talk-plus-hide' ).click( function(){
+        var $this = $( this );
+        
+        if( !$this.hasClass( 'talk-plus-hidden' )){
+          $( '#talk-plus-wrap' ).css( 'height', 25 );
+          $this.addClass( 'talk-plus-hidden' );
+          $this.text( 'Show' );
+        }else{
+          $( '#talk-plus-wrap' ).css( 'height', '' );
+          $this.removeClass( 'talk-plus-hidden' );
+          $this.text( 'Hide' );
+        }
+      });
+    },
+    
     join : function(){
-      var $input, $btn;
+      var self, $input, $btn;
       
+      self   = this;
       $input = $( '#talk-plus-title' );
       $btn   = $( '#talk-plus-add-name-btn' );
       
@@ -170,27 +205,9 @@
       });
       
       $btn.click( function( e ){
-        model.join( e );
+        self._join( e );
       });
       
-    },
-    
-    leave : function(){
-      
-    },
-    
-    send : function( $form ){
-      $form.submit( function( e ){
-        var $input, msg;
-        
-        e.preventDefault();
-        
-        $input = $( this ).find( '#talk-plus-input' );
-        msg    = $input.val();
-        
-        SOCKET.send( $.toJSON({ action : 'message', message : msg }));
-        $input.val( '' );
-      });
     }
   };
   
@@ -199,12 +216,7 @@
 //--- execute ------------------------------------------------------------------------------------------
 
   $( function(){
-    var $body;
-    
-    $body = $( 'body' );
-    
-    action.init( $body );
-    
+    action.init( $( 'body' ));
   });
 
 })( window, jQuery );

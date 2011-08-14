@@ -1,4 +1,5 @@
-@import lib
+@import "lib"
+@import "compass/utilities/general/clearfix"
 
 $font-base: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif
 
@@ -12,6 +13,7 @@ $font-base: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif
   bottom: 0
   right: 30px
   color: #222
+  overflow: hidden
   @include box-round-each( 5px, 5px, 0, 0 )
   @include box-shadow( 3px, 3px, 5px, 5px )
   
@@ -73,13 +75,19 @@ $font-base: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif
   @include box-round
   
 #talk-plus-share-input
-  width: 223px
+  width: 212px
   
-#talk-plus-name-input, #talk-plus-send-input
+#talk-plus-name-input
   width: 250px
   
+#talk-plus-send-input
+  width: 285px
+  
 #talk-plus-add-name-btn, #talk-plus-submit-btn
-    
+  background: #eee
+  border: 1px solid #777
+  @include box-round
+  
 #talk-plus-header
   text-shadow: 0 1px 0 white
   padding: 4px 8px 3px 8px
@@ -104,7 +112,7 @@ $font-base: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif
     @include float-l
     
   a
-    margin: 0 0 0 5px
+    margin: 0 0 0 10px
     
 #talk-plus-content
   width: 100%
@@ -116,12 +124,32 @@ $font-base: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif
   
   li
     padding: 3px
-
-.talk-plus-msg-time
-  @include float-r
+    @include clearfix
+    
+  span
+    &.talk-plus-msg-user
+      padding: 0 5px 0 0
+      font-weight: bolder
+      display: block
+    &.talk-plus-msg-msg
+      width: 300px
+      white-space: normal
+      word-break: break-all
+      @include float-l
+    &.talk-plus-msg-time
+      color: #aaa
+      @include float-r
   
 #talk-plus-footer
   border-top: 1px solid #777
   text-shadow: 0 1px 0 white
   padding: 4px 8px 10px 8px
   @include box-gradient( #eee, #888 )
+
+#talk-plus-hot-topic
+  height: 16px
+  padding: 5px 0 0
+  
+  h3
+    padding: 0 5px 0 0
+    @include float-l
