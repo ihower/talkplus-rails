@@ -58,15 +58,18 @@ class WelcomeController < ApplicationController
     
     def embeded_website
         @outside_link = params[:outside_link]
-        
-        if @outside_link.split("://")[1]
-            @embeded_link = @outside_link
+        if @outside_link
+            if @outside_link.split("://")[1]
+                @embeded_link = @outside_link
+            else
+                @embeded_link = "http://#{@outside_link}"
+            end
+            
+            #@embeded_link = "http://#{outside_link.split("//")[1]}"
+            render :layout => "outside"
         else
-            @embeded_link = "http://#{@outside_link}"
-        end
-        
-        #@embeded_link = "http://#{outside_link.split("//")[1]}"
-        render :layout => "outside"
+            redirect_to :action => 'index'
+        end        
     end
     
     def learn_more
