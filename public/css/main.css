@@ -1,4 +1,4 @@
-/* line 5, ../../app/assets/sass/main.sass */
+/* line 6, ../../app/assets/sass/main.sass */
 #talk-plus-wrap {
   font-size: 12px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -9,6 +9,7 @@
   bottom: 0;
   right: 30px;
   color: #222222;
+  overflow: hidden;
   -webkit-background-clip: padding-box;
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
@@ -20,7 +21,7 @@
   -moz-box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.6);
   box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.6);
 }
-/* line 18, ../../app/assets/sass/main.sass */
+/* line 20, ../../app/assets/sass/main.sass */
 #talk-plus-wrap span, #talk-plus-wrap applet, #talk-plus-wrap object, #talk-plus-wrap iframe,
 #talk-plus-wrap h1, #talk-plus-wrap h2, #talk-plus-wrap h3, #talk-plus-wrap h4, #talk-plus-wrap h5, #talk-plus-wrap h6, #talk-plus-wrap p, #talk-plus-wrap blockquote, #talk-plus-wrap pre,
 #talk-plus-wrap a, #talk-plus-wrap abbr, #talk-plus-wrap acronym, #talk-plus-wrap address, #talk-plus-wrap big, #talk-plus-wrap cite, #talk-plus-wrap code,
@@ -41,48 +42,48 @@
   font: inherit;
   vertical-align: baseline;
 }
-/* line 38, ../../app/assets/sass/main.sass */
+/* line 40, ../../app/assets/sass/main.sass */
 #talk-plus-wrap ol, #talk-plus-wrap ul {
   list-style: none;
 }
-/* line 41, ../../app/assets/sass/main.sass */
+/* line 43, ../../app/assets/sass/main.sass */
 #talk-plus-wrap table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* line 45, ../../app/assets/sass/main.sass */
+/* line 47, ../../app/assets/sass/main.sass */
 #talk-plus-wrap caption, #talk-plus-wrap th, #talk-plus-wrap td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
-/* line 50, ../../app/assets/sass/main.sass */
+/* line 52, ../../app/assets/sass/main.sass */
 #talk-plus-wrap q, #talk-plus-wrap blockquote {
   quotes: none;
 }
-/* line 53, ../../app/assets/sass/main.sass */
+/* line 55, ../../app/assets/sass/main.sass */
 #talk-plus-wrap q:before, #talk-plus-wrap q:after, #talk-plus-wrap blockquote:before, #talk-plus-wrap blockquote:after {
   content: "";
   content: none;
 }
-/* line 57, ../../app/assets/sass/main.sass */
+/* line 59, ../../app/assets/sass/main.sass */
 #talk-plus-wrap a img {
   border: none;
 }
-/* line 60, ../../app/assets/sass/main.sass */
+/* line 62, ../../app/assets/sass/main.sass */
 #talk-plus-wrap article, #talk-plus-wrap aside, #talk-plus-wrap details, #talk-plus-wrap figcaption, #talk-plus-wrap figure, #talk-plus-wrap footer, #talk-plus-wrap header, #talk-plus-wrap hgroup, #talk-plus-wrap menu, #talk-plus-wrap nav, #talk-plus-wrap section, #talk-plus-wrap summary {
   display: block;
 }
-/* line 63, ../../app/assets/sass/main.sass */
+/* line 65, ../../app/assets/sass/main.sass */
 #talk-plus-wrap h1, #talk-plus-wrap h2, #talk-plus-wrap h3, #talk-plus-wrap h4, #talk-plus-wrap h5, #talk-plus-wrap h6 {
   font-size: 12px;
 }
-/* line 66, ../../app/assets/sass/main.sass */
+/* line 68, ../../app/assets/sass/main.sass */
 #talk-plus-wrap a {
   color: #222222;
 }
 
-/* line 69, ../../app/assets/sass/main.sass */
+/* line 71, ../../app/assets/sass/main.sass */
 #talk-plus-share-input, #talk-plus-name-input, #talk-plus-send-input {
   background: #eeeeee;
   border: 1px solid #777777;
@@ -96,17 +97,35 @@
   border-radius: 3px;
 }
 
-/* line 75, ../../app/assets/sass/main.sass */
+/* line 77, ../../app/assets/sass/main.sass */
 #talk-plus-share-input {
-  width: 223px;
+  width: 212px;
 }
 
-/* line 78, ../../app/assets/sass/main.sass */
-#talk-plus-name-input, #talk-plus-send-input {
+/* line 80, ../../app/assets/sass/main.sass */
+#talk-plus-name-input {
   width: 250px;
 }
 
 /* line 83, ../../app/assets/sass/main.sass */
+#talk-plus-send-input {
+  width: 285px;
+}
+
+/* line 86, ../../app/assets/sass/main.sass */
+#talk-plus-add-name-btn, #talk-plus-submit-btn {
+  background: #eeeeee;
+  border: 1px solid #777777;
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 91, ../../app/assets/sass/main.sass */
 #talk-plus-header {
   text-shadow: 0 1px 0 white;
   padding: 4px 8px 3px 8px;
@@ -125,57 +144,73 @@
   -pie-background: linear-gradient(#eeeeee, #888888);
 }
 
-/* line 90, ../../app/assets/sass/main.sass */
+/* line 98, ../../app/assets/sass/main.sass */
 #talk-plus-chatroom-name {
   height: 20px;
   line-height: 16px;
 }
-/* line 94, ../../app/assets/sass/main.sass */
+/* line 102, ../../app/assets/sass/main.sass */
 #talk-plus-chatroom-name h3 {
   float: left;
   display: inline;
 }
-/* line 97, ../../app/assets/sass/main.sass */
+/* line 105, ../../app/assets/sass/main.sass */
 #talk-plus-chatroom-name a {
   margin: 0 0 0 10px;
   float: right;
   display: inline;
 }
 
-/* line 102, ../../app/assets/sass/main.sass */
+/* line 110, ../../app/assets/sass/main.sass */
 #talk-plus-share h3 {
   padding: 4px 5px 0 0;
   float: left;
   display: inline;
 }
-/* line 106, ../../app/assets/sass/main.sass */
+/* line 114, ../../app/assets/sass/main.sass */
 #talk-plus-share a {
-  margin: 0 0 0 5px;
+  margin: 0 0 0 10px;
 }
 
-/* line 109, ../../app/assets/sass/main.sass */
+/* line 117, ../../app/assets/sass/main.sass */
 #talk-plus-content {
   width: 100%;
   background: white;
 }
 
-/* line 113, ../../app/assets/sass/main.sass */
+/* line 121, ../../app/assets/sass/main.sass */
 #talk-plus-msgs {
   height: 200px;
   overflow: auto;
 }
-/* line 117, ../../app/assets/sass/main.sass */
+/* line 125, ../../app/assets/sass/main.sass */
 #talk-plus-msgs li {
   padding: 3px;
+  overflow: hidden;
+  *zoom: 1;
 }
-
-/* line 120, ../../app/assets/sass/main.sass */
-.talk-plus-msg-time {
+/* line 130, ../../app/assets/sass/main.sass */
+#talk-plus-msgs span.talk-plus-msg-user {
+  padding: 0 5px 0 0;
+  font-weight: bolder;
+  display: block;
+}
+/* line 134, ../../app/assets/sass/main.sass */
+#talk-plus-msgs span.talk-plus-msg-msg {
+  width: 300px;
+  white-space: normal;
+  word-break: break-all;
+  float: left;
+  display: inline;
+}
+/* line 139, ../../app/assets/sass/main.sass */
+#talk-plus-msgs span.talk-plus-msg-time {
+  color: #aaaaaa;
   float: right;
   display: inline;
 }
 
-/* line 123, ../../app/assets/sass/main.sass */
+/* line 143, ../../app/assets/sass/main.sass */
 #talk-plus-footer {
   border-top: 1px solid #777777;
   text-shadow: 0 1px 0 white;
@@ -185,4 +220,16 @@
   background: -moz-linear-gradient(top, #eeeeee, #888888 100%);
   background: linear-gradient(top, #eeeeee, #888888 100%);
   -pie-background: linear-gradient(#eeeeee, #888888);
+}
+
+/* line 149, ../../app/assets/sass/main.sass */
+#talk-plus-hot-topic {
+  height: 16px;
+  padding: 5px 0 0;
+}
+/* line 153, ../../app/assets/sass/main.sass */
+#talk-plus-hot-topic h3 {
+  padding: 0 5px 0 0;
+  float: left;
+  display: inline;
 }
