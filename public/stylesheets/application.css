@@ -16,7 +16,7 @@ body {
   width:196px;
   height:87px;
   text-indent:-999999px;
-  background: url(/stylesheets/images/logo.png);
+  background: url(../images/logo.png);
 }
 
 #main #description {
