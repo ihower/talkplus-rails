@@ -11,13 +11,18 @@
         <th>Chat Room</th>
         <th></th>
         <th>Users</th>
+        <th>Code</th>
     </tr>
-<% for i in (0..(@channels.length-1)) %>
+<% @channels.each_with_index do |channel, i| %>
     <tr>
-        <td><%= @channels[i].name %></td>
+        <td><%= channel.name %></td>
         <td>
-        <%= link_to image_tag('delete_channel.png', :width => '40', :alt => "刪除"), :action => 'delete_channel', :channel_id => @channels[i].id %></td>
+        <%= link_to image_tag('delete_channel.png', :width => '40', :alt => "刪除"), :action => 'delete_channel', :channel_id => channel.id %></td>
         <td><%= @count[i] %></td>
+        <td>
+            <textarea><link type="text/css" rel="stylesheet" media="screen" href="http://www.talkpl.us/css/main.css"><script src='http://www.talkpl.us/hotass.js?channel_id=<%= channel.id %>&channel_name=<%= channel.name %>'></script>
+            </textarea>
+        </td>
     </tr>
 <% end %>
 </table>
