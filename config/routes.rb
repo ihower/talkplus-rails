@@ -1,5 +1,6 @@
 TalkplusRails::Application.routes.draw do
   
+  get '/hotass.js' => 'channels#js'
   get '/test' => "welcome#test"
 
   resources :channels do
