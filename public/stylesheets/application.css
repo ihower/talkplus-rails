@@ -49,9 +49,21 @@ body {
   padding:3px 25px 0 25px;
 }
 
+#main #url-input .input-background {
+  margin:0;
+  padding:0;
+  height:45px;
+  width:491px;
+  background:url(/stylesheets/images/url_bar.png) no-repeat;
+}
+
 #main #url-input .input {
-  height:20px;
-  width:500px;
+  margin:5px 0 0 10px;
+  height:33px;
+  width:465px;
+  font-size:15px;
+  border:0;
+  background:none;
 }
 
 #main #tutoral {

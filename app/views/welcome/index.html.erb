@@ -6,7 +6,9 @@
 <div id="url-input">
     <%= form_tag :controller => 'welcome', :action => 'embeded_website' do %>
         <span>try talk+ on:</span>
-        <%= text_field_tag 'outside_link', nil, :class => "input" %>
+        <span class="input-background">
+            <%= text_field_tag 'outside_link', nil, :class => "input" %>
+        </span>
         <%= submit_tag 'GO', :class => "sumbit" %>
     <% end %>
 </div>
