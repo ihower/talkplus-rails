@@ -227,6 +227,9 @@ body {
 }
 
 #main #explain_what{
+  float:left;
+  width:900px;
+  height:230px;
   margin: 10px 50px 10px 50px;
 }
 
@@ -274,27 +277,8 @@ body {
   font-weight: bold;
 }
 
-#tutorial_block{
-  width: 180px;
-  margin: 0 30px 0 30px;
-  float: left;
+.explain-image {
+  margin: 15px 0 30px 45px;
 }
 
-#tutorial_block h2{
-  background: none;
-  padding: 0 0 0 0;
-  border: 0 0 0 0;
-  margin: 0 0 0 0;
-  text-indent: 0px;
-  font-size: 20px;
-  font-weight: bold;
-}
 
-#tutorial_block h3{
-  margin: 0 0 0 0;
-  padding: 0;
-  border: 0;
-  font-size: 15px;
-}
-
->>>>>>> ff061c24799f7103421039cd38514e516aae6369
