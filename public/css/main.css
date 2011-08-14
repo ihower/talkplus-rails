@@ -102,11 +102,11 @@
 }
 
 /* line 78, ../../app/assets/sass/main.sass */
-#talk-plus-name-input {
-  width: 230px;
+#talk-plus-name-input, #talk-plus-send-input {
+  width: 250px;
 }
 
-/* line 81, ../../app/assets/sass/main.sass */
+/* line 83, ../../app/assets/sass/main.sass */
 #talk-plus-header {
   text-shadow: 0 1px 0 white;
   padding: 4px 8px 3px 8px;
@@ -125,47 +125,57 @@
   -pie-background: linear-gradient(#eeeeee, #888888);
 }
 
-/* line 88, ../../app/assets/sass/main.sass */
+/* line 90, ../../app/assets/sass/main.sass */
 #talk-plus-chatroom-name {
   height: 20px;
   line-height: 16px;
 }
-/* line 92, ../../app/assets/sass/main.sass */
+/* line 94, ../../app/assets/sass/main.sass */
 #talk-plus-chatroom-name h3 {
   float: left;
   display: inline;
 }
-/* line 95, ../../app/assets/sass/main.sass */
+/* line 97, ../../app/assets/sass/main.sass */
 #talk-plus-chatroom-name a {
   margin: 0 0 0 10px;
   float: right;
   display: inline;
 }
 
-/* line 100, ../../app/assets/sass/main.sass */
+/* line 102, ../../app/assets/sass/main.sass */
 #talk-plus-share h3 {
   padding: 4px 5px 0 0;
   float: left;
   display: inline;
 }
-/* line 104, ../../app/assets/sass/main.sass */
+/* line 106, ../../app/assets/sass/main.sass */
 #talk-plus-share a {
   margin: 0 0 0 5px;
 }
 
-/* line 107, ../../app/assets/sass/main.sass */
+/* line 109, ../../app/assets/sass/main.sass */
 #talk-plus-content {
   width: 100%;
   background: white;
 }
 
-/* line 111, ../../app/assets/sass/main.sass */
+/* line 113, ../../app/assets/sass/main.sass */
 #talk-plus-msgs {
   height: 200px;
   overflow: auto;
 }
+/* line 117, ../../app/assets/sass/main.sass */
+#talk-plus-msgs li {
+  padding: 3px;
+}
 
-/* line 115, ../../app/assets/sass/main.sass */
+/* line 120, ../../app/assets/sass/main.sass */
+.talk-plus-msg-time {
+  float: right;
+  display: inline;
+}
+
+/* line 123, ../../app/assets/sass/main.sass */
 #talk-plus-footer {
   border-top: 1px solid #777777;
   text-shadow: 0 1px 0 white;
