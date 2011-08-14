@@ -75,8 +75,10 @@ $font-base: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif
 #talk-plus-share-input
   width: 223px
   
-#talk-plus-name-input
-  width: 230px
+#talk-plus-name-input, #talk-plus-send-input
+  width: 250px
+  
+#talk-plus-add-name-btn, #talk-plus-submit-btn
     
 #talk-plus-header
   text-shadow: 0 1px 0 white
@@ -111,7 +113,13 @@ $font-base: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif
 #talk-plus-msgs
   height: 200px
   overflow: auto
+  
+  li
+    padding: 3px
 
+.talk-plus-msg-time
+  @include float-r
+  
 #talk-plus-footer
   border-top: 1px solid #777
   text-shadow: 0 1px 0 white

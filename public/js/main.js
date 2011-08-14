@@ -44,11 +44,11 @@
             '<div id="talk-plus-join">' +
               '<label id="talk-plus-title">Name: </label>' + 
               '<input id="talk-plus-name-input" type="text"/>' +
-              '<input id="talk-plus-add-name-btn" type="submit" />' +
+              '<input id="talk-plus-add-name-btn" type="submit" value="Join"/>' +
             '</div>' + 
             '<div id="talk-plus-send" style="display: none;">' +
               '<input id="talk-plus-send-input" type="text"/>' +
-              '<input id="talk-plus-submit" type="submit" />' +
+              '<input id="talk-plus-submit-btn" type="submit" value="Send"/>' +
             '</div>' +
           '</form>' + 
           '<div id="talk-plus-hot-top">' +
@@ -70,9 +70,9 @@
 
     msg : function( user, msg, time ){
       return '<li>' +
-        '<span>' + user + '</span>' +
+        '<span>' + user + ' </span>' +
         '<span>' + msg +'</span>' +
-        '<span>'+ time +'</span>' +
+        '<span class="talk-plus-msg-time">'+ time +'</span>' +
       '</li>';
     }
 
@@ -89,11 +89,10 @@
       
       e.preventDefault();
       
-      self      = this;
-      HOST      = window.location.host.split( ':' )[ 0 ];
-      SOCKET    = new WebSocket( 'ws://127.0.0.1:3000/websocket' );
-      // SOCKET = new WebSocket( 'ws://api.talkpl.us/websocket' );
-      NAME      = $( '#talk-plus-name-input' ).val();
+      self   = this;
+      HOST   = window.location.host.split( ':' )[ 0 ];
+      SOCKET = new WebSocket( 'ws://api.talkpl.us/websocket' );
+      NAME   = $( '#talk-plus-name-input' ).val();
 
       $( '#talk-plus-join' ).hide();
       $( '#talk-plus-send' ).show();
@@ -135,7 +134,7 @@
     },
     
     message : function( $msg_block, user, msg, time ){
-      $msg_block.append( view.msg( user + ': ', msg, time ));
+      $msg_block.append( view.msg( user + ':', msg, time ));
     },
     
     control : function( $msg_block, user, msg, time ){
