@@ -4,16 +4,12 @@
     <%= render_page_title(@page_title) %>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag "reset" %>
-    <link type="text/css" rel="stylesheet" media="screen" href="/css/main.css">
     <link type="text/css" rel="stylesheet" media="screen" href="/css/outside.css">
   </head>
   <body>
     <%= yield %>
     
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
-    <script src='http://jquery-json.googlecode.com/files/jquery.json-2.2.min.js'></script>
-    <script src='http://datejs.googlecode.com/svn/trunk/build/date.js'></script>
-    <script src='/js/main.js'></script>
 
     <script type="text/javascript">
 
