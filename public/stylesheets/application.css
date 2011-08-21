@@ -100,13 +100,15 @@ body {
 #main #description-buttons {
   float:left;
   text-align:center;
-  margin:0 0 10px 90px;
+/*  margin:0 0 10px 90px;*/
+  margin:0 0 10px 200px;
 }
 
 #main #description-buttons .link-button {
   float:right;
   display:block;
-  margin-right:10px;
+/*  margin-right:10px;*/
+  margin-right:30px;
   width:140px;
   height:30px;
   line-height:30px;

@@ -1,6 +1,13 @@
 require 'digest/md5'
 class WelcomeController < ApplicationController
     def index
+        @channels = Channel.all
+        count = @channels.map &lambda {|x| ChannelUser.where(:channel_id => x.id).length}
+        count_hash = {} 
+        for i in (0..(count.length-1))
+            count_hash[i] = count[i]
+        end
+        @sorted_channels = count_hash.sort {|a,b| b[1] <=> a[1]}
     end
     
     def facebook_login

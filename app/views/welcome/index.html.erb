@@ -1,6 +1,6 @@
 <div id="description">
     <h2>Let's Talk now!</h2>
-    <p>talk+ is a platform to talk about a hot topic with anyone.</p>
+    <p>talk+ is a platform to talk about a hot topic with anyone easily.</p>
 </div>
 
 <div id="url-input">
@@ -17,8 +17,26 @@
     <%= link_to "Facebook", 'https://www.facebook.com/TalkPlus', :class => "link-button" %>
     <%= link_to "Learn More", '/welcome/learn_more', :class => "link-button" %>
     <%= link_to "On Android", "http://dl.dropbox.com/u/26793275/TalkPlus.apk", :class => "link-button" %>
+<!--
     <%= link_to "Top Talks", '/welcome/view_all_channels', :class => "link-button" %>
     <%= link_to "Your Talks", '/auth/facebook', :class => "link-button" %>
+-->
 </div>
-
+<!--
 <%= image_tag("3_steps.png", :class => "steps") %>
+-->
+<table id="manage-table">
+    <caption> </caption>
+    <tr>
+        <th>Chat Room</th>
+        <th></th>
+        <th>Users</th>
+    </tr>
+    <% @sorted_channels.each do |s| %>
+    <tr>
+        <td><%= @channels[s[0].to_i].name %></td>
+        <td></td>
+        <td><%= s[1] %></td>
+    </tr>
+<% end %>
+</table>
