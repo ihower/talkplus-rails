@@ -2,6 +2,11 @@ require 'digest/md5'
 class WelcomeController < ApplicationController
     def index
         @channels = Channel.all
+        # brute force. that name is too long. take it away
+        too_long = Channel.where("name like '%taipei.startupweekend.org/2011/08/16/%'")
+#        render :text => @channels - too_long
+
+        @channels = @channels - too_long
         count = @channels.map &lambda {|x| ChannelUser.where(:channel_id => x.id).length}
         count_hash = {} 
         for i in (0..(count.length-1))
